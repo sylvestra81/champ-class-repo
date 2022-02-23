@@ -2,7 +2,7 @@
 pipeline {
 agent none
 stages {
-stage( 'Create user account) {
+stage( 'Create user account') {
 
 steps {
 
