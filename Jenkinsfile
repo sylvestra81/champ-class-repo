@@ -2,19 +2,19 @@
 pipeline {
 agent any
 stages {
-stage( 'Create user account') {
+stage( 'how is jenkins') {
 
 steps {
 
-sh 'useradd fola && echo “reset4U$” |passwd — stdin fola'
+echo 'jenkins is dope'
 
 }
 }
-stage('Check fola ID') {
+stage('check date') {
 
 steps {
 
-sh 'id fola'
+sh 'date'
 
 }
 }
