@@ -22,7 +22,7 @@ sh 'date'
 
 steps {
 
-sh 'cal'
+sh 'date'
 
 }
 }
