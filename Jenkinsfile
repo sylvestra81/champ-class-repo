@@ -30,7 +30,7 @@ sh 'date'
 
 steps {
 
-sh 'this the champ class'
+echo 'this the champ class'
 
 }
 }
