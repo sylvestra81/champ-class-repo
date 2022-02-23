@@ -14,7 +14,7 @@ stage('Check fola ID') {
 
 steps {
 
-sh 'id fola’
+sh 'id fola'
 
 }
 }
