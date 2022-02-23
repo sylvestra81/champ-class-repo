@@ -18,5 +18,13 @@ sh 'date'
 
 }
 }
+  stage('check calendar') {
+
+steps {
+
+sh 'cal'
+
+}
+}
 }
 }
