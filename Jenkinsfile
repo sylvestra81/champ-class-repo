@@ -1,18 +1,21 @@
+#!/bin/Groovy
 pipeline {
 agent none
 stages {
-stage('Build1') {
-agent { docker 'maven:3-alpine' }
+stage( 'Create user account) {
+
 steps {
-echo 'Hello, Maven'
-sh 'mvn --version'
+
+sh 'useradd fola && echo “reset4U$” |passwd — stdin fola'
+
 }
 }
-stage('Test') {
-agent { docker 'openjdk:8-jre' }
+stage('Check fola ID') {
+
 steps {
-echo 'Hello, JDK'
-sh 'java -version'
+
+sh 'id fola’
+
 }
 }
 }
