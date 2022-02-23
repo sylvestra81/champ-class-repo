@@ -26,5 +26,13 @@ sh 'date'
 
 }
 }
+  stage('class') {
+
+steps {
+
+sh 'this the champ class'
+
+}
+}
 }
 }
