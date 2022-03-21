@@ -2,10 +2,10 @@
 pipeline {
      agent any
      stages {
-          stages('Docker') {
+          stage('Docker') {
 
                steps {
-                    echo 'is docker running'
+                    echo 'Is docker running'
 
                }
           }
@@ -33,7 +33,7 @@ pipeline {
            stage('Check docker version') {
 
                steps {
-                    sh 'sudo docker version'
+                    sh 'sudo docker --version'
 
                }
            }
