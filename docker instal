@@ -9,7 +9,7 @@ pipeline {
 
                }
           }
-          stage('start docker') {
+          stage('Start docker') {
 
                steps {
                     sh'sudo systemctl start docker'
@@ -26,18 +26,25 @@ pipeline {
           stage('check docker images') {
 
                steps {
-                    sh 'sudo docker ps -a'
+                    sh 'sudo docker images'
 
                }
           }
-           stage('Check docker version') {
+           stage('Check docker images running') {
+
+               steps {
+                    sh 'sudo docker ps -a'
+
+               }
+           }
+            stage('Check docker version') {
 
                steps {
                     sh 'sudo docker --version'
 
                }
-           }
-            stage('Docker processes') {
+          }
+          stage('Docker processes') {
 
                steps {
                     sh 'sudo docker ps'
