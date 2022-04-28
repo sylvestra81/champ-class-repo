@@ -12,7 +12,7 @@ pipeline {
           stage('Start docker') {
 
                steps {
-                    sh'sudo systemctl restart docker'
+                    sh'sudo systemctl start docker'
 
                }
           }
