@@ -37,10 +37,10 @@ pipeline {
 
                }
            }
-            stage('Check docker log') {
+            stage('Check docker version') {
 
                steps {
-                    sh 'sudo docker log'
+                    sh 'sudo docker --version'
 
                }
            }
